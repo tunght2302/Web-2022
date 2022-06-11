@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="md:max-w-6xl mx-auto">
+        <header>
+            <div class="max-w-4xl mx-auto px-5">
+                <div class="flex justify-end">
+                    <button id="button" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
+                            class="bi bi-justify" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="md:flex justify-end">
+                    <ul id="menu" class="hidden md:flex md:space-x-4">
+                        <li><a href="" class="hover:text-red-500">Works</a></li>
+                        <li><a href="" class="hover:text-red-500">Blog</a></li>
+                        <li><a href="" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            const menu = document.getElementById("menu");
+            const button = document.getElementById("button");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+        <div class="flex  grid-cols-1 md:grid-cols-2 gap-8 grid md:mt-20 mb-12 md:justify-items-end">
+            <div class="text-center md:text-left order-2 md:order-1 md:cols-span-2">
+                <h2 class=" text-[30px] md:text-[44px] font-bold text-[#21243D]"> <span class="mb-3">Hi, I am
+                        Tung,</span>
+                    <br>
+                    <span>Creative Technologist</span>
+                </h2>
+                <p class="py-5 text-[25px] md:text-[30px]text-[#21243D]">Amet minim mollit non deserunt ullamco est sit
+                    aliqua dolor do amet
+                    sint. Velit officia
+                    consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="border-1 bg-red-400 px-2 p-2 text-white font-bold">Download Resume</button>
+            </div>
+            <div class="order-1 md:order-2 md:cols-span-1 mx-auto">
+                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654757146/tung_pbkntf.png" alt=""
+                    class="w-[350px] h-[450px]">
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#EDF7FA] md:max-w-full mx-auto">
+        <div class="max-w-6xl mx-auto pb-5">
+            <div class="md:hidden text-center py-3">
+                <h2 class="text-lg">Recent posts</h2>
+            </div>
+            <div class="hidden md:flex justify-between py-5">
+                <h2 class="text-lg">Recent posts</h2>
+                <button class="text-blue-500">View all</button>
+            </div>
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <div class="bg-white p-5 ">
+                    <h2 class="font-bold text-[26px] text-[#21243D]">Making a design system from <br> scratch</h2>
+                    <div class="py-5 text-[18px] space-x-5">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </div>
+                    <p class="text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="bg-white p-5">
+                    <h2 class="font-bold text-[26px] text-[#21243D]">Creating pixel perfect icons in <br> Figma</h2>
+                    <div class="py-5 text-[18px] space-x-5">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </div>
+                    <p class="text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md:max-w-6xl mx-auto">
+        <h2 class="py-5 text-xl text-[#21243D] text-center md:text-left">Featured works</h2>
+        <div class="md:flex">
+            <div class="md:w-[246px] md:h-[140px] md:ml-0 ml-5">
+                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654235050/Rectangle_30_mlb7re.jpg"
+                    alt="">
+            </div>
+            <div class=" space-x-5">
+                <h2 class="font-bold text-2xl pl-5 text-[#21243D] mb-3">Designing Dashboards</h2>
+                <span class="rounded-xl bg-[#142850] text-white px-3 font-bold">2020</span>
+                <span class="text-[#8695A4]">Dashboard</span>
+                <p class=" mt-2 text-lg">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+        <hr class="bg-gray-500 mt-7 mb-7 ">
+        <div class="mt-10">
+            <div class="md:flex">
+                <div class="md:w-[246px] md:h-[140px] md:ml-0 ml-5">
+                    <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654235050/Rectangle_32_ro15bh.jpg"
+                        alt="">
+                </div>
+                <div class=" space-x-5">
+                    <h2 class="font-bold text-2xl pl-5 text-[#21243D] mb-3">Vibrant Portraits of 2020</h2>
+                    <span class="rounded-xl bg-[#142850] text-white px-3 font-bold ">2020</span>
+                    <span class="text-[#8695A4]">Dashboard</span>
+                    <p class="ml-5 mt-2 text-lg">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-100 mt-7 mb-7 ">
+        <div class="md:flex">
+            <div class=" md:w-[246px] md:h-[140px] md:ml-0 ml-5">
+                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654235050/Rectangle_34_d2ctbi.jpg"
+                    alt="">
+            </div>
+            <div>
+                <div class=" space-x-5">
+                    <h2 class="font-bold text-2xl pl-5 text-[#21243D] mb-3">36 Days of Malayalam type</h2>
+                    <span class="rounded-xl bg-[#142850] text-white px-3 font-bold">2020</span>
+                    <span class="text-[#8695A4]">Dashboard</span>
+                    <p class="ml-5 mt-2 text-lg">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-500 mt-7 mb-7 hidden">
+    </div>
+</body>
+<footer class="bg-white mx-auto mt-14  h-[200px] p-20 ">
+    <div class="flex justify-center space-x-8">
+        <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654264600/fb_g06wlc.png" alt="">
+        <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654264600/insta_pntnfw.png" alt="">
+        <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654264600/Group_w7uubs.png" alt="">
+        <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654264600/Linkedin_jlmden.png" alt="">
+    </div>
+    <p class="text-center mt-5">Copyright ©2020 All rights reserved </p>
+</footer>
+
+</html>
