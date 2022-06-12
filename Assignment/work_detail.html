@@ -10,43 +10,71 @@
 </head>
 
 <body>
-    <div class="max-w-6xl mx-auto">
-        <div class="text-[20px] font-bold">
-            <ul class="flex justify-end space-x-5 mt-5">
-                <li><a href="">Blog</a></li>
-                <li><a href="" class="text-[#FF6464]">Works</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div class="max-w-2xl mx-auto">
-            <h2 class="font-bold text-[34px] mt-28">Designing Dashboards with <br> usability in mind</h2>
-            <div class="flex space-x-5 mb-5 mt-7">
-                <span class="text-[18px]  bg-[#FF7C7C] rounded-2xl px-5 text-white font-bold ">2020</span>
-                <p class="text-[20px]">Dashboard, User Experience Design</p>
+    <div class="md:max-w-6xl mx-auto">
+        <header>
+            <div class="max-w-4xl mx-auto px-5">
+                <div class="flex justify-end">
+                    <button id="button" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
+                            class="bi bi-justify" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="md:flex justify-end">
+                    <ul id="menu" class="hidden md:flex md:space-x-4">
+                        <li><a href="" class="hover:text-red-500">Blog</a></li>
+                        <li><a href="" class="hover:text-red-500">Works</a></li>
+                        <li><a href="" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <p class="mt-5 mb-5 text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia
-                <br> consequat
-                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <div>
-                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523921/Rectangle_4_o4yj6q.png" alt="">
-            </div>
-            <div>
-                <h2 class="text-[30px] font-bold mt-10">Heading 1</h2>
-                <h3 class="text-[24px] font-bold mb-5">Heading 2</h3>
-                <p class="mb-5 text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia <br> consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <div class="mb-5">
-                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523917/Rectangle_5_yv1cb3.png" alt="">
-            </div>
-            <div>
-                <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523914/Rectangle_6_s6vgdh.png" alt="">
-            </div>
-        </div>
+        </header>
 
+        <script>
+            const menu = document.getElementById("menu");
+            const button = document.getElementById("button");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+        <div class="md:mx-auto px-5">
+            <div class="md:max-w-2xl mx-auto">
+                <h2 class="font-bold text-left md:text-left text-[30px] md:text-[34px] mt-28">Designing Dashboards with
+                    usability in mind</h2>
+                <div class="flex  space-x-2 md:space-x-5 mb-5 mt-7">
+                    <span
+                        class="text-[18px]  bg-[#FF7C7C] rounded-2xl md:px-5 px-2 text-white font-bold ">2020</span>
+                    <p class=" text-[18px] md:text-[20px]">Dashboard, User Experience Design</p>
+                </div>
+                <p class="mt-5 mb-5 text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint.
+                    Velit officia
+                    <br> consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div>
+                    <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523921/Rectangle_4_o4yj6q.png" alt="">
+                </div>
+                <div>
+                    <h2 class="md:text-[30px] text-[26px] font-bold mt-10">Heading 1</h2>
+                    <h3 class="md:text-[24px] text-[20px] font-bold mb-5">Heading 2</h3>
+                    <p class="mb-5 text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                        do amet sint.
+                        Velit officia <br> consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="mb-5">
+                    <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523917/Rectangle_5_yv1cb3.png" alt="">
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/ho-ng-t-ng/image/upload/v1654523914/Rectangle_6_s6vgdh.png" alt="">
+                </div>
+            </div>
+        </div>
+       
     </div>
     <div class="bg-white mx-auto mt-40 mb-16">
         <div class="flex justify-center space-x-8">
